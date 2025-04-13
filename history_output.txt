@@ -1,0 +1,503 @@
+   1  exit
+    2  id
+    3  exit
+    4  ls -al
+    5  cd test
+    6  ll
+    7  cd ..
+    8  cd test2
+    9  cd testsdduser
+   10  cd testadduser
+   11  ll
+   12  sudo usermod -s /bin/sh -aG www-data testadduser
+   13  id
+   14  id testadduser
+   15  cat /etc/passwd | grep test
+   16  passwd
+   17  exit
+   18  passwd
+   19  exit
+   20  cat > vb.list
+   21  nano vb.list
+   22  apt update
+   23  wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg --dearmor
+   24  apt update
+   25  apt list --upgradable
+   26  apt upgrade
+   27  cd /etc
+   28  nano crontab
+   29  cd cron.daily/
+   30  ll
+   31  cd ../cron.d
+   32  ll
+   33  nano e2scrub_all 
+   34  ps afx | grep [c]ron
+   35  crontab -l
+   36  exit
+   37  cd /etc/apt
+   38  cd sources.list.d/
+   39  ll
+   40  apr autoremove
+   41  apt autoremove
+   42  ll
+   43  apt update
+   44  snap install certbot
+   45  snap install --classic certbot
+   46  snap remove certbot
+   47  nano /etc/crontab
+   48  /home/anb/test
+   49  /home/anb/test/
+   50  cat tfile
+   51  /home/anb/test/
+   52  cat tfile
+   53  nano /etc/crontab
+   54  cat tfile
+   55  /home/anb/test/
+   56  ll
+   57  cd
+   58  cd /home/anb/test/
+   59  ll
+   60  cat tfile
+   61  nano /etc/crontab
+   62  sudo add-apt-repository ppa:obsproject/obs-studio
+   63  sudo apt update
+   64  cd etc/apt/sources.list.d/
+   65  cd etc/apt/sources.list.
+   66  cd etc/apt/sources.list.d
+   67  cd etc/apt/
+   68  cd /etc/apt/sources.list.d
+   69  ll
+   70  rm obsproject-ubuntu-obs-studio-noble.sources 
+   71  apt update
+   72  ll
+   73  exit
+   74  ll
+   75  nano 90-NM-1eef7e45-3b9d-3043-bee3-fc5925c90273.yaml
+   76  nano 50-cloud-init.yaml
+   77  netplan try
+   78  nano 50-cloud-init.yaml
+   79  netplan try
+   80  nano 50-cloud-init.yaml
+   81  netplan try
+   82  ip a
+   83  nano 50-cloud-init.yaml
+   84  netplan try
+   85  ip a
+   86  ping ya.ru
+   87  exit
+   88  1
+   89  nano 50-cloud-init.yaml
+   90  netplan try
+   91  nano 50-cloud-init.yaml
+   92  netplan try
+   93  ip a
+   94  nano 50-cloud-init.yaml
+   95  netplan try
+   96  nano 50-cloud-init.yaml
+   97  netplan try
+   98  ip a
+   99  nano 50-cloud-init.yaml
+  100  ping ya.ru
+  101  cat /etc/hosts
+  102  resolvectl dns
+  103  exit
+  104  cd /etc/netplan
+  105  ll
+  106  nano 90-NM-1eef7e45-3b9d-3043-bee3-fc5925c90273.yaml
+  107  nano 50-cloud-init.yaml
+  108  ip a
+  109  nano 50-cloud-init.yaml
+  110  nano 90-NM-1eef7e45-3b9d-3043-bee3-fc5925c90273.yaml
+  111  service networking restart
+  112  systemctl restart networking.service
+  113  systemctl restart networking
+  114  iptables -L -nv
+  115  iptables -F
+  116  iptables -L -nv
+  117  iptables -A INPUT -p tcp --dport=22 -j ACCEPT
+  118  iptables -L -nv
+  119  iptables -A INPUT -p tcp --dport=80 -j ACCEPT
+  120  iptables -A INPUT -p tcp --dport=443 -j ACCEPT
+  121  iptables -L -nv
+  122  iptables -A INPUT -i lo -j ACCEPT
+  123  iptables -L -nv
+  124  cd
+  125  iptables -I INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+  126  iptables -L -nv
+  127  iptables -A INPUT -p icmp -j ACCEPT
+  128  iptables -L -nv
+  129  ping ya.ru
+  130  iptables -P INPUT ACCEPT
+  131  iptables -L -nv
+  132  ping ya.ru
+  133  iptables -P INPUT DROP
+  134  iptables -L -nv
+  135  ip a
+  136  iptables -L -nv -t nat
+  137  iptables-save > ip.rules
+  138  cat ip.rules
+  139  apt install iptables-persistent netfilter-persistent
+  140  cd /etc/iptables
+  141  ll
+  142  cat rules.v4
+  143  exit
+  144  ss -ntlp
+  145  ip -c a
+  146  exit
+  147  ip -c a
+  148  ip -c -s a
+  149  ping ya.ru
+  150  ping 85.234.38.150
+  151  iptables -L -nv
+  152  nano 50-cloud-init.yaml
+  153  cd /etc/netplan
+  154  ll
+  155  nano 50-cloud-init.yaml
+  156  cd
+  157  ping ya.ru
+  158  nano 50-cloud-init.yaml
+  159  cd /etc/netplan
+  160  ll
+  161  nano 50-cloud-init.yaml
+  162  nano 90-NM-1eef7e45-3b9d-3043-bee3-fc5925c90273.yaml
+  163  nano 50-cloud-init.yaml
+  164  nano 90-NM-1eef7e45-3b9d-3043-bee3-fc5925c90273.yaml
+  165  ping ya.ru
+  166  nano 50-cloud-init.yaml
+  167  nano 90-NM-1eef7e45-3b9d-3043-bee3-fc5925c90273.yaml
+  168  nano 50-cloud-init.yaml
+  169  netplan try
+  170  ping ya.ru
+  171  ping 192.168.0.1
+  172  ping 127.0.0.1
+  173  nano 50-cloud-init.yaml
+  174  cd /etc/resolv.conf
+  175  cd /etc
+  176  ll
+  177  nano resolv.conf
+  178  cd ../run/systemd/resolve
+  179  ll
+  180  nano resolv.conf
+  181  nano stub-resolv.conf
+  182  nano resolv.conf
+  183  cd
+  184  ping ya.ru
+  185  exit
+  186  ping ya.ru
+  187  cd ../run/systemd/resolve
+  188  cd /etc
+  189  cd ../run/systemd/resolve
+  190  nano resolv.conf
+  191  cd
+  192  exit
+  193  nano 50-cloud-init.yaml
+  194  cd /etc/netplan
+  195  nano netplan
+  196  ll
+  197  nano 50-cloud-init.yaml
+  198  nano 90-NM-1eef7e45-3b9d-3043-bee3-fc5925c90273.yaml
+  199  nano 50-cloud-init.yaml
+  200  nano 90-NM-1eef7e45-3b9d-3043-bee3-fc5925c90273.yaml
+  201  nano 50-cloud-init.yaml
+  202  netplan try
+  203  sudo systemctl restart systemd-networkd
+  204  ping ya.ru
+  205  ping 8.8.8.8
+  206  nano 50-cloud-init.yaml
+  207  cd /etc
+  208  cd ../run/systemd/resolve
+  209  ll
+  210  nano resolv.conf
+  211  cd /etc/hosts
+  212  cd /etc
+  213  ip r
+  214  sudo ip route add default via 192.168.0.1 dev enp0s3
+  215  ip r
+  216  ip a
+  217  ip route add default via 192.168.0.1 dev enp0s3
+  218  ip route add 192.168.0.1 dev enp0s3
+  219  ip route add default via 192.168.0.1 dev enp0s3
+  220  ip r
+  221  ip a
+  222  ping ya.ru
+  223  ping 1.1.1.1
+  224  ping 8.8.8.8
+  225  ping 85.234.38.150
+  226  ping ya.ru
+  227  ip
+  228  man ip
+  229  ip google.com
+  230  ip yandex.ru
+  231  ip ya.ru
+  232  ping google.com
+  233  ping 192/168/0/1
+  234  ping 192.168.0.1
+  235  ping 8.8.8.8
+  236  ping 85.234.38.150
+  237  ip r
+  238  ip route add 192.168.0.1 dev enp0s3
+  239  ip route add default via 192.168.0.1 dev enp0s3
+  240  ping 85.234.38.150
+  241  ip r
+  242  ip route add 192.168.0.1 dev enp0s3
+  243  ip route add default via 192.168.0.1 dev enp0s3
+  244  ip a
+  245  ip r
+  246  ip a
+  247  ip r
+  248  ip route add 192.168.0.1 dev enp0s3
+  249  ip route add default via 192.168.0.1 dev enp0s3
+  250  ip r
+  251  ip a
+  252  ip r
+  253  ip a
+  254  ip r
+  255  1
+  256  ll
+  257  nano 50-cloud-init.yaml
+  258  ping ya.ru
+  259  iptables -t nat -L
+  260  ping 85.234.38.150
+  261  docker swarm join --token SWMTKN-1-04oyu908zn54b619wcquws6fl1wod34hse330ecs51exqwj9y6-8temy2vt9uc066f27483j6x6x 192.168.0.54:2377
+  262  docker swarm leave
+  263  docker swarm join --token SWMTKN-1-04oyu908zn54b619wcquws6fl1wod34hse330ecs51exqwj9y6-8temy2vt9uc066f27483j6x6x 192.168.0.54:2377
+  264  apt update
+  265  apt upgrade
+  266  docker swarm join --token SWMTKN-1-04oyu908zn54b619wcquws6fl1wod34hse330ecs51exqwj9y6-8temy2vt9uc066f27483j6x6x 192.168.0.54:2377
+  267  docker swarm leave
+  268  docker swarm join --token SWMTKN-1-04oyu908zn54b619wcquws6fl1wod34hse330ecs51exqwj9y6-8temy2vt9uc066f27483j6x6x 192.168.0.54:2377
+  269  docker swarm join --token SWMTKN-1-66abd6tf3pxm6w65bj6dlz0zzac0mur3qqw7nc165levw20yrc-9vd5lh8v8q77j3fq9hpyrug6l 192.168.0.175:2377
+  270  docker swarm leave
+  271  docker swarm join --token SWMTKN-1-66abd6tf3pxm6w65bj6dlz0zzac0mur3qqw7nc165levw20yrc-9vd5lh8v8q77j3fq9hpyrug6l 192.168.0.175:2377
+  272  docker swarm leave
+  273  docker swarm join --token SWMTKN-1-2h465v0fatsz6o0dgupxuq3efd59rsar8lxcvkk6aqe3zgu4yr-4ulhfmgzdghtk51bllpq9uytu 192.168.0.54:2377
+  274  docker info
+  275  apt docker.io
+  276  apt install docker.io
+  277  sudo apt autoremove
+  278  docker -v
+  279  apt update docker
+  280  apt upgrade docker
+  281  apt upgrade docker.io
+  282  apt install docker-compose
+  283  docker -v
+  284  docker swarm leave
+  285  docker swarm join --token SWMTKN-1-2h465v0fatsz6o0dgupxuq3efd59rsar8lxcvkk6aqe3zgu4yr-4ulhfmgzdghtk51bllpq9uytu 192.168.0.54:2377
+  286  docker info
+  287  for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+  288  # Add Docker's official GPG key:
+  289  sudo apt-get update
+  290  sudo apt-get install ca-certificates curl
+  291  sudo install -m 0755 -d /etc/apt/keyrings
+  292  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+  293  sudo chmod a+r /etc/apt/keyrings/docker.asc
+  294  # Add the repository to Apt sources:
+  295  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  296    $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  297  sudo apt-get update
+  298  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+  299  docker run hello-world
+  300  reboot
+  301  sudo apt install docker.io
+  302  apt-get update
+  303  sudo apt install docker.io
+  304  docker swarm join --token SWMTKN-1-04oyu908zn54b619wcquws6fl1wod34hse330ecs51exqwj9y6-8temy2vt9uc066f27483j6x6x 192.168.0.54:2377
+  305  docker info
+  306  netstat -tulpn | grep LISTEN
+  307  ss -ntlp
+  308  docker start
+  309  docker images
+  310  docker status
+  311  systenctl status docker
+  312  systemctl status docker
+  313  qx
+  314  ping 192.168.0.54
+  315  docker swarm join --token SWMTKN-1-04oyu908zn54b619wcquws6fl1wod34hse330ecs51exqwj9y6-8temy2vt9uc066f27483j6x6x 192.168.0.175:2377
+  316  docker swarm join --token SWMTKN-1-04oyu908zn54b619wcquws6fl1wod34hse330ecs51exqwj9y6-8temy2vt9uc066f27483j6x6x 192.168.0.54:2377
+  317  docker node ls
+  318  docker swarm join --token SWMTKN-1-04oyu908zn54b619wcquws6fl1wod34hse330ecs51exqwj9y6-8temy2vt9uc066f27483j6x6x 192.168.0.54:2377
+  319  docker swarm leave
+  320  docker swarm join --token SWMTKN-1-04oyu908zn54b619wcquws6fl1wod34hse330ecs51exqwj9y6-8temy2vt9uc066f27483j6x6x 192.168.0.54:2377
+  321  docker info
+  322  docker swarm join --token SWMTKN-1-04oyu908zn54b619wcquws6fl1wod34hse330ecs51exqwj9y6-8temy2vt9uc066f27483j6x6x 192.168.0.54:2377
+  323  docker run hello-word
+  324  docker images
+  325  docker -v
+  326  docker swarm join --token SWMTKN-1-04oyu908zn54b619wcquws6fl1wod34hse330ecs51exqwj9y6-8temy2vt9uc066f27483j6x6x 192.168.0.54:2377
+  327  docker info
+  328  docker swarm logs
+  329  docker logs
+  330  ip -a
+  331  ip a
+  332  iptables -t nat -L
+  333  iptables -L
+  334  ip -c a
+  335  ss -tulpan
+  336  iptables -I INPUT -p tcp --dport 2376 -j ACCEPT
+  337  iptables -I INPUT -p tcp --dport 7946 -j ACCEPT
+  338  ss -tulpan
+  339  iptables -I INPUT -p udp --dport 7946 -j ACCEPT
+  340  iptables -I INPUT -p udp --dport 4789 -j ACCEPT
+  341  ss -tulpan
+  342  iptables -t nat -L
+  343  docker swarm join --token SWMTKN-1-04oyu908zn54b619wcquws6fl1wod34hse330ecs51exqwj9y6-8temy2vt9uc066f27483j6x6x 192.168.0.54:2377
+  344  docker swarm leave
+  345  docker swarm join --token SWMTKN-1-04oyu908zn54b619wcquws6fl1wod34hse330ecs51exqwj9y6-8temy2vt9uc066f27483j6x6x 192.168.0.54:2377
+  346  ss -tulpan
+  347  netfilter-persistent save
+  348  ss -tulpan
+  349  iptables -I INPUT -p tcp --dport 2376 -j ACCEPT
+  350  iptables -I INPUT -p tcp --dport 7946 -j ACCEPT
+  351  iptables -I INPUT -p udp --dport 4789 -j ACCEPT
+  352  iptables -I INPUT -p udp --dport 7946 -j ACCEPT
+  353  ss -tulpan
+  354  ip a
+  355  reboot
+  356  ss -tulpan
+  357  ll
+  358  nano ip.rules 
+  359  ss -tulpan
+  360  ip a
+  361  ip -c a
+  362  journalctl -xe
+  363  cd
+  364  ll
+  365  nano ip.rules 
+  366  docker network ls
+  367  ll
+  368  cd /home/anb
+  369  ll
+  370  reboot
+  371  ss -tulpan
+  372  iptables -I INPUT -p tcp --dport 2376 -j ACCEPT
+  373  ss -tulpan
+  374  iptables -I INPUT -p tcp --dport 7946 -j ACCEPT
+  375  iptables -I INPUT -p udp --dport 7946 -j ACCEPT
+  376  iptables -I INPUT -p udp --dport 4789 -j ACCEPT
+  377  ss -tulpan
+  378  iptables -h
+  379  telnet 192.168.0.54 2377
+  380  ping 85.234.38.150
+  381  ping 85.234.38.150:3390
+  382  telnet 85.234.38.150 3390
+  383  telnet 85.234.38.150
+  384  telnet 192.168.0.54 2377
+  385  ss -ntlp
+  386  docker node ls
+  387  docker swarm join --token SWMTKN-1-04oyu908zn54b619wcquws6fl1wod34hse330ecs51exqwj9y6-8temy2vt9uc066f27483j6x6x 192.168.0.54:2377
+  388  docker info 
+  389  docker node ls
+  390  nano ip.rules 
+  391  ss -ntpl
+  392  ll
+  393  nano ip.rules 
+  394  ip a
+  395  docker ps -a
+  396  cd /etc/sysconfig/iptables
+  397  cd /etc/sysconfig/
+  398  cd /etc/sysconfig
+  399  cd /etc
+  400  ll
+  401  iptables -L
+  402  iptables -t nat -L
+  403  ip route show table local type local
+  404  ll
+  405  apt update
+  406  apt upgrade
+  407  fp
+  408  apt -upgrade
+  409  apt-get upgrade
+  410  apt upgrade
+  411  apt update
+  412  apt list --upgradable
+  413  fp -a
+  414  apt --update
+  415  apt update
+  416  apt upgrade
+  417  cat > Pets.txt
+  418  cat > PackAnimals.txt
+  419  cat Pets.txt PackAnimals.txt > Animals.txt
+  420  ls
+  421  cat Animals.txt
+  422  mv Animals.txt HumanFriends.txt
+  423  ls
+  424  mkdir new_directory
+  425  ls
+  426  mv HumanFriends.txt new_directory/
+  427  ls new_directory/
+  428  sudo apt-get update
+  429  sudo apt-get install software-properties-common
+  430  apt autoremove
+  431  sudo add-apt-repository 'deb http://repo.mysql.com/apt/ubuntu/focal mysql-8.0
+
+
+
+  432  sudo add-apt-repository 'deb http://repo.mysql.com/apt/ubuntu/focal mysql-8.0'
+  433  systemctl status mysql
+  434  dpkg -l
+  435  ll
+  436  dpkg -i virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb 
+  437  apt -f install
+  438  cd etc/apt/sources.list.d/
+  439  cd /etc/apt/sources.list.d/
+  440  ll
+  441  dpkg -r virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb 
+  442  dpkg -r "virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb" 
+  443  dpkg -r virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb
+  444  ll
+  445  cd ..
+  446  ll
+  447  cd
+  448  cd /etc/apt/
+  449  ll
+  450  cd
+  451  ll
+  452  cd /home/anb
+  453  ll
+  454  dpkg -r virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb 
+  455  mv virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb 
+  456  mv --help
+  457  dpkg --remove virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb 
+  458  apt remove --purge virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb 
+  459  cd /etc/apt/
+  460  ll
+  461  cd sources.list.d/
+  462  ll
+  463  cat vb.list
+  464  cat > vb.list
+  465  nano vb.list 
+  466  wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg --dearmor
+  467  apt update
+  468  ll
+  469  nano archive_uri-http_repo_mysql_com_apt_ubuntu_focal-noble.list 
+  470  apt update
+  471  nano archive_uri-http_repo_mysql_com_apt_ubuntu_focal-noble.list 
+  472  rm archive_uri-http_repo_mysql_com_apt_ubuntu_focal-noble.list 
+  473  apt update
+  474  dpkg -r virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb 
+  475  sudo apt install -f
+  476  sudo apt clean
+  477  sudo apt autoremove
+  478  sudo dpkg --configure -a
+  479  ll
+  480  cd /usr/anb
+  481  cd /home/anb
+  482  ll
+  483  rm virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb 
+  484  ll
+  485  sudo apt autoremove
+  486  apt update
+  487  apt list --upgradable
+  488  apt upgrade
+  489  wget http://archive.ubuntu.com/ubuntu/pool/main/g/gnome-calculator/gnome-calculator_46.0-1ubuntu1_amd64.deb
+  490  dpkg -i gnome-calculator_46.0-1ubuntu1_amd64.deb
+  491  dpkg -r gnome-calculator_46.0-1ubuntu1_amd64.deb
+  492  dpkg -r gnome-calculator_46.0-1
+  493  gnome-calculator_46.0-1
+  494  dpkg -r gnome-calculator_46.0-1
+  495  dpkg -r gnome-calculator_46.1-1
+  496  dpkg -r gnome-calculator_46.1
+  497  dpkg -r gnome-calculator_46.0
+  498  dpkg -i gnome-calculator_46.0-1ubuntu1_amd64.deb
+  499  dpkg -r gnome-calculator
+  500  history > history_output.txt
